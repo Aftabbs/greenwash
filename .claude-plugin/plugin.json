@@ -1,0 +1,18 @@
+{
+  "name": "greenwash",
+  "displayName": "greenwash",
+  "version": "0.1.0",
+  "description": "Catches coding agents that delete assertions, skip tests or swallow failures, then report success.",
+  "author": {
+    "name": "Mohammed Aftab",
+    "url": "https://github.com/Aftabbs"
+  },
+  "repository": "https://github.com/Aftabbs/greenwash",
+  "license": "Apache-2.0",
+  "keywords": [
+    "testing",
+    "verification",
+    "code-review",
+    "agents"
+  ]
+}

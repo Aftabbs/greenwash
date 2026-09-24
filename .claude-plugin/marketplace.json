@@ -1,0 +1,15 @@
+{
+  "name": "greenwash",
+  "description": "Deterministic checks for coding agents that weaken tests.",
+  "owner": {
+    "name": "Mohammed Aftab",
+    "url": "https://github.com/Aftabbs"
+  },
+  "plugins": [
+    {
+      "name": "greenwash",
+      "source": "./",
+      "description": "Catches coding agents that weaken your tests and report success."
+    }
+  ]
+}

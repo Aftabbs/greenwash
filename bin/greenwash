@@ -1,0 +1,14 @@
+#!/bin/sh
+# greenwash, run straight from this plugin checkout so the plugin needs no
+# separate install. Uses the first Python 3.10+ it finds. Without one, hook
+# calls exit 0 so a missing interpreter never blocks the agent.
+root=$(cd "$(dirname "$0")/.." && (pwd -W 2>/dev/null || pwd))
+for py in python3 python py; do
+  if command -v "$py" >/dev/null 2>&1 &&
+     "$py" -c 'import sys; sys.exit(sys.version_info < (3, 10))' 2>/dev/null; then
+    PYTHONPATH="$root/src" exec "$py" -m greenwash "$@"
+  fi
+done
+echo "greenwash: needs Python 3.10 or newer" >&2
+[ "$1" = "hook" ] && exit 0
+exit 2

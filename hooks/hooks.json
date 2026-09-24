@@ -1,0 +1,16 @@
+{
+  "description": "Stop a coding agent from reporting success after weakening the tests",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/bin/greenwash\" hook stop",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
