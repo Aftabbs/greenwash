@@ -1,5 +1,8 @@
 # greenwash
 
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/1e695536-7011-4335-be35-0fafe9c2dd78" />
+
+
 Catches coding agents that weaken your tests and then report success.
 
 Your agent says *"Done, all tests pass."* Sometimes it deleted the failing
